@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pagar producto</title>
+	<link rel="stylesheet" type="text/css" href="../Css/inicio.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<!--Nav-->
+	<nav class="contenedor-nav">
+		<ul class="ul-nav">
+			<li class="calcular-options">Calcular Iva</li>
+			<li>
+				<a href="contactos.html">Contacto</a>
+			</li>
+			<li>
+				<a href="../index.html">Salir</a>
+			</li>
+		</ul>
+	</nav>
+	<!--Iva-->
+	<div class="contenedor-principal">
+		<div class="contenedor-iva">
+			<h2>Calcular Iva del producto ingresado</h2>
+			<div class="form">
+				<span class="span-form">
+					<input id="precioIva" type="text" name="" placeholder="Ingrese precio del producto">
+					<input type="text" disabled name="" value="21%">
+				</span>
+				<h3 class="valor">
+					Resultado <i id="imprimirIva"> $0.0 </i>
+				</h3>
+				<button id="calcularIva">CALCULAR</button>
+			</div>
+		</div>
+	</div>
+	<!--Descuento-->
+	<div class="contenedor-principal">
+		<div class="contenedor-iva">
+			<h2>Calcular Descuento del producto ingresado</h2>
+			<div class="form">
+				<span class="span-form">
+					<input id="precioDesc" type="text" name="" placeholder="Ingrese precio del producto">
+					<select id="selectDesc">
+						<option value="10">10%</option>
+						<option value="20">20%</option>
+						<option value="30">30%</option>
+					</select>
+				</span>
+				<h3 class="valor">
+					Resultado <i id="imprimirDesc"> $0.0 </i>
+				</h3>
+				<button id="calcularDesc">CALCULAR</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+
+
+<script type="text/javascript" src="../Js/calculos.js"></script>

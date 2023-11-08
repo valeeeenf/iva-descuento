@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contacto</title>
+	<link rel="stylesheet" type="text/css" href="../Css/contactanos.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<!--Nav-->
+	<nav class="contenedor-nav">
+		<ul class="ul-nav">
+			<li class="calcular-options">
+				<a href="inicio.html">Calcular Iva</a>
+			</li>
+			<li>
+				<a href="contactos.html">Contacto</a>
+			</li>
+			<li>
+				<a href="../index.html">Salir</a>
+			</li>
+		</ul>
+	</nav>
+	<!---->
+	<div class="contenedor-contactanos">
+		<h1>Contactanos</h1>
+		<p>
+			<ul>
+				<li class="item-1">
+					Email
+					<ul>
+						<li>prueba@prueba.com</li>
+					</ul>
+				</li>
+				<li class="item-1">
+					Telefono
+					<ul>
+						<li>(011)4422-5851</li>
+					</ul>
+				</li>
+				<li class="item-1">
+					Celular
+					<ul>
+						<li>(+54)1125785423</li>
+					</ul>
+				</li>
+				<li class="item-1">
+					Horario de Atención
+					<ul>
+						<li>Lun a Vie / 8:00hs a 17:00hs</li>
+					</ul>
+				</li>
+			</ul>
+		</p>
+	</div>
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+	var calcular = document.getElementById('calcular');
+	var imprimir = document.getElementById('imprimir');
+	var total;
+	var iva;
+	calcular.addEventListener("click", function()
+	{
+		var precio = document.getElementById('precio').value;
+		precio=parseInt(precio);
+
+		if(!isNaN(precio))
+		{
+			iva=(precio * 0.21);
+			imprimir.innerHTML=iva;
+		}
+		else
+		{
+			imprimir.innerHTML="$0.0";
+			alert("Error ingrese el precio del producto!!");
+		}
+	});
+
+</script>

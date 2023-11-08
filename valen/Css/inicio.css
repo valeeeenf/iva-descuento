@@ -1,0 +1,90 @@
+
+*{margin: 0}
+
+:root{
+	--borde:#0D25BA;
+}
+
+body{
+	font-family: Arial;
+}
+
+
+/*INICIO*/
+
+	/*Menu*/
+		.contenedor-nav , a{
+			background: #c4fff7;
+			color: #007364;
+		}
+
+		.ul-nav{
+			display: flex;
+			justify-content: end;
+			padding: 20px 0;
+			cursor: pointer;
+		}
+
+		.ul-nav li{
+			list-style: none;
+			margin: 0 20px;
+		}
+
+		.ul-nav li:hover{
+			background: #e5ffff;
+		}
+
+		.calcular-options{
+			border-bottom: 2px solid #007364;
+		}
+
+	/*Calcular Iva*/
+		.contenedor-principal{
+			display: flex;
+			justify-content: center;
+			margin-top: 100px;
+		}
+			.contenedor-iva{
+				width: 500px;
+				border: 1px solid #007364;
+				border-radius: 10px;
+				padding: 10px;
+			}
+
+			.contenedor-iva h2{
+				text-align: center;
+				padding: 10px 0;
+				color: #007364;
+			}
+
+			.form{
+				display: flex;
+				flex-direction: column;
+				margin: 10px 20px;
+			}
+
+			.span-form{
+				display: flex;
+				justify-content: center;
+			}
+
+			.form input{
+				width: 200px;
+				margin: 0 10px;
+				padding: 5px;
+			}
+
+			.valor{
+				text-align: center;
+				margin-top: 20px;
+			}
+
+			button{
+				margin-top: 20px;
+				background: black;
+				color: white;
+				border: none;
+				border-radius: 10px;
+				padding: 5px;
+			}
+
